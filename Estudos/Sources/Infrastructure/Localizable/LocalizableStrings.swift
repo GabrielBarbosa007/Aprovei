@@ -20,7 +20,6 @@ enum LocalizableStrings: String {
         rawValue.localizeInCurrentBundle()
     }
 }
-
 extension String {
     func localizeInCurrentBundle(_ accessibility: Bool = false) -> String {
         let path: Bundle = .current

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8AD4E44296F124D00D614B2 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AD4E43296F124D00D614B2 /* TextFieldDefault.swift */; };
+		C8AD4E46296F1E7D00D614B2 /* LabelTextDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AD4E45296F1E7D00D614B2 /* LabelTextDefault.swift */; };
+		C8AD4E48296F1F2700D614B2 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AD4E47296F1F2700D614B2 /* String+.swift */; };
 		C8B178A1295DC1C2008FE6B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B178A0295DC1C2008FE6B7 /* AppDelegate.swift */; };
 		C8B178A3295DC1C2008FE6B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B178A2295DC1C2008FE6B7 /* SceneDelegate.swift */; };
 		C8B178AA295DC1C3008FE6B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B178A9295DC1C3008FE6B7 /* Assets.xcassets */; };
@@ -15,6 +18,9 @@
 		C8B178C2295DC1C3008FE6B7 /* EstudosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B178C1295DC1C3008FE6B7 /* EstudosUITests.swift */; };
 		C8B178C4295DC1C3008FE6B7 /* EstudosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B178C3295DC1C3008FE6B7 /* EstudosUITestsLaunchTests.swift */; };
 		C8C734B1296DA826004C422B /* Colors+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C734B0296DA826004C422B /* Colors+.swift */; };
+		C8C734B4296DE0F1004C422B /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C734B3296DE0F1004C422B /* ButtonDefault.swift */; };
+		C8C734B7296DE61F004C422B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C734B6296DE61F004C422B /* Constants.swift */; };
+		C8C734B9296DE85E004C422B /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C734B8296DE85E004C422B /* LabelDefault.swift */; };
 		C8DC77FE2967317900A7366C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DC77FD2967317900A7366C /* Coordinator.swift */; };
 		C8DC7800296731BD00A7366C /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DC77FF296731BD00A7366C /* LoginCoordinator.swift */; };
 		C8DC78052967335B00A7366C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DC78042967335B00A7366C /* LoginViewController.swift */; };
@@ -42,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C8AD4E43296F124D00D614B2 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
+		C8AD4E45296F1E7D00D614B2 /* LabelTextDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextDefault.swift; sourceTree = "<group>"; };
+		C8AD4E47296F1F2700D614B2 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		C8B1789D295DC1C2008FE6B7 /* Estudos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Estudos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B178A0295DC1C2008FE6B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8B178A2295DC1C2008FE6B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +63,9 @@
 		C8B178C1295DC1C3008FE6B7 /* EstudosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstudosUITests.swift; sourceTree = "<group>"; };
 		C8B178C3295DC1C3008FE6B7 /* EstudosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstudosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C8C734B0296DA826004C422B /* Colors+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+.swift"; sourceTree = "<group>"; };
+		C8C734B3296DE0F1004C422B /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
+		C8C734B6296DE61F004C422B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C8C734B8296DE85E004C422B /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
 		C8DC77FD2967317900A7366C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C8DC77FF296731BD00A7366C /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		C8DC78042967335B00A7366C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -111,9 +123,9 @@
 		C8B1789F295DC1C2008FE6B7 /* Estudos */ = {
 			isa = PBXGroup;
 			children = (
+				C8B178AE295DC1C3008FE6B7 /* Info.plist */,
 				C8DC77F829672CE900A7366C /* Resourc */,
 				C8DC77FB29672D9600A7366C /* Sources */,
-				C8B178AE295DC1C3008FE6B7 /* Info.plist */,
 			);
 			path = Estudos;
 			sourceTree = "<group>";
@@ -139,17 +151,37 @@
 			isa = PBXGroup;
 			children = (
 				C8C734B0296DA826004C422B /* Colors+.swift */,
+				C8AD4E47296F1F2700D614B2 /* String+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C8C734B2296DE0C6004C422B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C8C734B3296DE0F1004C422B /* ButtonDefault.swift */,
+				C8C734B8296DE85E004C422B /* LabelDefault.swift */,
+				C8AD4E43296F124D00D614B2 /* TextFieldDefault.swift */,
+				C8AD4E45296F1E7D00D614B2 /* LabelTextDefault.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C8C734B5296DE608004C422B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C8C734B6296DE61F004C422B /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		C8DC77F829672CE900A7366C /* Resourc */ = {
 			isa = PBXGroup;
 			children = (
 				C8B178A0295DC1C2008FE6B7 /* AppDelegate.swift */,
-				C8B178A2295DC1C2008FE6B7 /* SceneDelegate.swift */,
 				C8B178A9295DC1C3008FE6B7 /* Assets.xcassets */,
 				C8B178AB295DC1C3008FE6B7 /* LaunchScreen.storyboard */,
+				C8B178A2295DC1C2008FE6B7 /* SceneDelegate.swift */,
 			);
 			path = Resourc;
 			sourceTree = "<group>";
@@ -157,9 +189,9 @@
 		C8DC77FB29672D9600A7366C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C8DC780F296742D700A7366C /* Infrastructure */,
 				C8DC78022967333800A7366C /* Controllers */,
 				C8DC77FC2967315900A7366C /* Coordinator */,
+				C8DC780F296742D700A7366C /* Infrastructure */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -202,9 +234,11 @@
 		C8DC780F296742D700A7366C /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				C8C734B2296DE0C6004C422B /* Components */,
+				C8C734B5296DE608004C422B /* Constants */,
 				C8C734AF296DA805004C422B /* Extensions */,
-				C8DC780B2967421B00A7366C /* Strings */,
 				C8DC7811296742F500A7366C /* Localizable */,
+				C8DC780B2967421B00A7366C /* Strings */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -350,13 +384,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8DC78092967356800A7366C /* LoginView.swift in Sources */,
+				C8C734B4296DE0F1004C422B /* ButtonDefault.swift in Sources */,
 				C8B178A1295DC1C2008FE6B7 /* AppDelegate.swift in Sources */,
 				C8DC78132967431D00A7366C /* LocalizableStrings.swift in Sources */,
 				C8B178A3295DC1C2008FE6B7 /* SceneDelegate.swift in Sources */,
+				C8C734B9296DE85E004C422B /* LabelDefault.swift in Sources */,
+				C8C734B7296DE61F004C422B /* Constants.swift in Sources */,
 				C8DC7800296731BD00A7366C /* LoginCoordinator.swift in Sources */,
+				C8AD4E46296F1E7D00D614B2 /* LabelTextDefault.swift in Sources */,
 				C8C734B1296DA826004C422B /* Colors+.swift in Sources */,
 				C8DC78052967335B00A7366C /* LoginViewController.swift in Sources */,
 				C8DC77FE2967317900A7366C /* Coordinator.swift in Sources */,
+				C8AD4E48296F1F2700D614B2 /* String+.swift in Sources */,
+				C8AD4E44296F124D00D614B2 /* TextFieldDefault.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
