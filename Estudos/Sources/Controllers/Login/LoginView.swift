@@ -14,7 +14,7 @@ class LoginView: UIView {
     
     lazy var emailField = LabelTextDefault(labelText: LocalizableStrings.email.localize(),
                                            placeholder: LocalizableStrings.emailPlaceholder.localize(),
-                                           font: UIFont.systemFont(ofSize: 15),
+                                           font: UIFont.systemFont(ofSize: Constant.uiFont),
                                            keyboardType: .emailAddress,
                                            returnKeyType: .next)
     
@@ -52,24 +52,28 @@ class LoginView: UIView {
     
     private func setupLabelEmail() {
         self.subViews()
+        
+        let emailTopAnchor: CGFloat = 100
+        let passwordBottonAnchor: CGFloat = 90
+        let buttonTopAnchor: CGFloat = 300
+        let ButtonRegisterTopAnchor: CGFloat = 70
+        
         NSLayoutConstraint.activate([
+            emailField.topAnchor.constraint(equalTo: self.topAnchor, constant: emailTopAnchor),
+            emailField.leftAnchor.constraint(equalTo: self.leftAnchor,constant: ConstantsConstraints.leftAnchor),
+            emailField.rightAnchor.constraint(equalTo: self.rightAnchor, constant: ConstantsConstraints.rightAnchor),
             
-            emailField.topAnchor.constraint(equalTo: self.topAnchor, constant: 100),
-            emailField.leftAnchor.constraint(equalTo: self.leftAnchor,constant: 12),
-            emailField.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -12),
+            passwordField.bottomAnchor.constraint(equalTo: emailField.bottomAnchor, constant: passwordBottonAnchor),
+            passwordField.leftAnchor.constraint(equalTo: self.leftAnchor,constant: ConstantsConstraints.leftAnchor),
+            passwordField.rightAnchor.constraint(equalTo: self.rightAnchor, constant: ConstantsConstraints.rightAnchor),
             
-            passwordField.bottomAnchor.constraint(equalTo: emailField.bottomAnchor, constant: 90),
-            passwordField.leftAnchor.constraint(equalTo: self.leftAnchor,constant: 12),
-            passwordField.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -12),
+            buttonEntrar.topAnchor.constraint(equalTo: self.topAnchor,constant: buttonTopAnchor),
+            buttonEntrar.leftAnchor.constraint(equalTo: self.leftAnchor,constant: ConstantsConstraints.leftAnchor),
+            buttonEntrar.rightAnchor.constraint(equalTo: self.rightAnchor, constant: ConstantsConstraints.rightAnchor),
             
-            buttonEntrar.topAnchor.constraint(equalTo: self.topAnchor,constant: 300),
-            buttonEntrar.leftAnchor.constraint(equalTo: self.leftAnchor,constant: 12),
-            buttonEntrar.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -12),
-            
-            buttonRegister.topAnchor.constraint(equalTo: buttonEntrar.topAnchor,constant: 70 ),
-            buttonRegister.leftAnchor.constraint(equalTo: self.leftAnchor,constant: 12),
-            buttonRegister.rightAnchor.constraint(equalTo: self.rightAnchor,constant: -12)
-            
+            buttonRegister.topAnchor.constraint(equalTo: buttonEntrar.topAnchor,constant: ButtonRegisterTopAnchor),
+            buttonRegister.leftAnchor.constraint(equalTo: self.leftAnchor,constant: ConstantsConstraints.leftAnchor),
+            buttonRegister.rightAnchor.constraint(equalTo: self.rightAnchor,constant: ConstantsConstraints.rightAnchor)
         ])
     }
 }
