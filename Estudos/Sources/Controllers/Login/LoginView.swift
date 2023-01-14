@@ -10,15 +10,7 @@ import UIKit
 
 class LoginView: ViewDefault {
     
-    
-    
-    
-    
     // MARK: Implementar a imagem aqui
-    
-    
-    
-    
     
     
     // MARK: - Labels
@@ -58,9 +50,9 @@ class LoginView: ViewDefault {
    private func setupLabelEmail() {
        subViews()
         
-        let emailTopAnchor: CGFloat = 100
+        let emailTopAnchor: CGFloat = 50
         let passwordBottonAnchor: CGFloat = 90
-        let buttonOpenTopAnchor: CGFloat = 300
+        let buttonOpenTopAnchor: CGFloat = 270
         let ButtonRegisterTopAnchor: CGFloat = 70
         
         NSLayoutConstraint.activate([

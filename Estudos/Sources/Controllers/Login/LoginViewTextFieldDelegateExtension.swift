@@ -15,6 +15,7 @@ extension LoginView: UITextFieldDelegate {
         if textField == emailField.textField {
             self.scrollView.setContentOffset(CGPoint(x: 0, y: 10), animated: true)
         } else if textField == passwordField.textField {
+            textField.layer.borderColor = UIColor.red.cgColor
             self.scrollView.setContentOffset(CGPoint(x: 0, y: 5), animated: true)
         }
     }
