@@ -11,8 +11,10 @@ import UIKit
 class LabelTextDefault: UIView {
     // MARK: Properts:
     
+
+    
     lazy  private var label = LabelDefault(title: String.empty)
-    lazy  private var textField = TextFieldDefault(placeholder: String.empty)
+    lazy  var textField = TextFieldDefault(placeholder: String.empty)
     
     init(labelText: String, placeholder: String) {
         super.init(frame: .zero)
@@ -24,6 +26,7 @@ class LabelTextDefault: UIView {
     }
     
     init(labelText: String, placeholder: String, font: UIFont , keyboardType: UIKeyboardType, returnKeyType: UIReturnKeyType){
+        
         super.init(frame: .zero)
         self.label.text = labelText
         
