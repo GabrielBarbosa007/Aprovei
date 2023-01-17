@@ -5,7 +5,7 @@
   Created by Gabriel Barbosa on 05/01/23.
 */
 
-"email"="Insira seu e-mail";
+"email"="Insira seu email";
 "emailPlaceholder"="Digite seu email";
 "password"="Insira sua senha";
 "passwordPlaceholder"="Digite sua senha";

@@ -32,4 +32,14 @@ extension LoginView: UITextFieldDelegate {
         }
         return true
     }
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        if textField == passwordField.textField {
+            if !RegExp.checkPasswordComplexity(password: self.passwordField.textField.text!, length: 6, patternsToEscape: [], caseSensitivty: true, numericDigits: true, specialCharacter: true) {
+                textField.layer.borderColor = UIColor.red.cgColor
+            } else {
+                textField.layer.borderColor = UIColor.black.cgColor
+            }
+        }
+    }
 }

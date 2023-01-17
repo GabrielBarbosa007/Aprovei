@@ -39,16 +39,19 @@ class LoginView: ViewDefault {
     private func subViews() {
         self.addSubview(emailField)
         emailField.textField.delegate = self
+        
         self.addSubview(passwordField)
         passwordField.textField.delegate = self
+        
         self.addSubview(buttonEntrar)
+        buttonEntrar.addTarget(self, action: #selector(buttonEntrarTap), for: .touchUpInside)
         self.addSubview(buttonRegister)
     }
     
     // MARK: Constraints dos elementos visuais:
     
-   private func setupLabelEmail() {
-       subViews()
+    private func setupLabelEmail() {
+        subViews()
         
         let emailTopAnchor: CGFloat = 50
         let passwordBottonAnchor: CGFloat = 90
@@ -72,5 +75,15 @@ class LoginView: ViewDefault {
             buttonRegister.leftAnchor.constraint(equalTo: contentView.leftAnchor,constant: ConstantsConstraints.leftAnchor),
             buttonRegister.rightAnchor.constraint(equalTo: contentView.rightAnchor,constant: ConstantsConstraints.rightAnchor)
         ])
+    }
+    
+    // MARK: Actions 
+    @objc
+    private func buttonEntrarTap() {
+        if !RegExp.checkPasswordComplexity(password: self.passwordField.textField.text!, length: 6, patternsToEscape: [], caseSensitivty: true, numericDigits: true, specialCharacter: true){
+            print("Senha nao preenche os requisitos")
+        } else {
+            self.passwordField.textField.layer.backgroundColor = UIColor.black.cgColor
+        }
     }
 }
