@@ -1,16 +1,17 @@
-////
+
+//
 //  IntrodutionController.swift
 //  Estudos
 //
-//  Created by Diego on 17/01/23.
+//  Created by Diego on 15/01/23.
 //
 
 import UIKit
 
-class IntroductionController2: UIViewController {
+class IntroductionController3: UIViewController {
     
-    var custonView: IntroductionView2?
-    
+    var custonView: IntroductionView3?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setCustonView()
@@ -18,17 +19,17 @@ class IntroductionController2: UIViewController {
     }
     
     func setCustonView() {
-        custonView = IntroductionView2()
+        custonView = IntroductionView3()
         self.view = custonView
     }
     
     func setupButton() {
-        custonView?.setButtonAdvance(targuet: self, action: #selector(forIntrofuction3))
+        custonView?.setButtonAdvance(targuet: self, action: #selector(forIntrofuction4))
     }
     
-    @objc private func forIntrofuction3() {
-        let advance =  IntroductionController3()
-
+    @objc private func forIntrofuction4() {
+        let advance =  IntroductionController4()
+        
         self.navigationController?.pushViewController(advance, animated: true)
     }
 }
