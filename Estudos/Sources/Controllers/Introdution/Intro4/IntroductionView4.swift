@@ -21,6 +21,12 @@ class IntroductionView4: UIView {
     
     lazy var buttonApple = ButtonSocial(title: "apple")
     
+    lazy var ou = LabelDefault2(title: "ou", font: .systemFont(ofSize: 16) )
+    
+    lazy var buttonAccount = ButtonBottomless(title: "Cria conta")
+    
+    lazy var buttonEnter = ButtonDefaul2(title: "Entrar")
+    
     override init(frame: CGRect) {
         super.init(frame:frame)
         addViews()
@@ -39,6 +45,10 @@ class IntroductionView4: UIView {
         self.addSubview(buttonGoogle)
         self.addSubview(buttonFacebook)
         self.addSubview(buttonApple)
+        self.addSubview(ou)
+        self.addSubview(buttonAccount)
+        self.addSubview(buttonEnter)
+        
     }
     
     func setConstraints() {
@@ -72,8 +82,24 @@ class IntroductionView4: UIView {
             buttonApple.topAnchor.constraint(equalTo: text2.bottomAnchor,constant: 40),
             buttonApple.leadingAnchor.constraint(equalTo: buttonFacebook.trailingAnchor,constant: 40),
             buttonApple.widthAnchor.constraint(equalToConstant: 64),
-            buttonApple.heightAnchor.constraint(equalToConstant: 64
-                                               )
+            buttonApple.heightAnchor.constraint(equalToConstant: 64),
+            
+            ou.topAnchor.constraint(equalTo: buttonFacebook.bottomAnchor,constant: 24),
+            ou.centerXAnchor.constraint(equalTo: centerXAnchor),
+            ou.widthAnchor.constraint(equalToConstant: 301),
+            ou.heightAnchor.constraint(equalToConstant: 22),
+            
+            buttonAccount.topAnchor.constraint(equalTo: ou.bottomAnchor,constant: 25),
+            buttonAccount.bottomAnchor.constraint(equalTo: bottomAnchor,constant: -58),
+            buttonAccount.leadingAnchor.constraint(equalTo: leadingAnchor,constant: 20),
+            buttonAccount.widthAnchor.constraint(equalToConstant: 160),
+            buttonAccount.heightAnchor.constraint(equalToConstant: 40),
+            
+            buttonEnter.topAnchor.constraint(equalTo: ou.bottomAnchor,constant: 25),
+            buttonEnter.bottomAnchor.constraint(equalTo: bottomAnchor,constant: -58),
+            buttonEnter.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -20),
+            buttonEnter.widthAnchor.constraint(equalToConstant: 160),
+            buttonEnter.heightAnchor.constraint(equalToConstant: 40),
         ])
         
     }

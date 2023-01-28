@@ -22,9 +22,9 @@ class ButtonDefaul2: UIButton {
         self.setTitle(title, for: .normal)
         self.setTitleColor(.white, for: .normal)
         self.layer.cornerRadius = 20
-        self.backgroundColor = UIColor(red: 228/255, green: 11/255, blue: 174/255, alpha: 1)
+        self.backgroundColor = UIColor(red: 234/255, green: 49/255, blue: 111/255, alpha: 1)
         self.layer.masksToBounds = true
-        self.titleLabel?.font = .systemFont(ofSize: 19, weight: .heavy)
+        self.titleLabel?.font = .systemFont(ofSize: 19, weight: .medium)
         self.translatesAutoresizingMaskIntoConstraints = false
     }
 }
