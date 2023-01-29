@@ -62,7 +62,8 @@ class IntroductionView3: UIView {
             buttonAdvance3.topAnchor.constraint(equalTo: texttwo3.bottomAnchor,constant: 100),
             buttonAdvance3.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -20),
             buttonAdvance3.widthAnchor.constraint(equalToConstant: 160),
-            buttonAdvance3.heightAnchor.constraint(equalToConstant: 40)
+            buttonAdvance3.heightAnchor.constraint(equalToConstant: 40),
+            buttonAdvance3.bottomAnchor.constraint(equalTo: bottomAnchor,constant: -58)
             
         ])
     }

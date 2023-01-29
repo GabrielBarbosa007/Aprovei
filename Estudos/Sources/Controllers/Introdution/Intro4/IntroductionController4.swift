@@ -14,13 +14,10 @@ class IntroductionController4: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setCustonView()
-
-        // Do any additional setup after loading the view.
     }
     
     func setCustonView() {
         custonView = IntroductionView4()
         self.view = custonView
     }
-    
 }

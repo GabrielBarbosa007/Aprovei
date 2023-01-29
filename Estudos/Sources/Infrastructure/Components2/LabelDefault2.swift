@@ -25,6 +25,7 @@ class LabelDefault2: UILabel{
         self.textColor = textColor
         self.textAlignment = textAlignment
         self.numberOfLines = 0
+        self.contentMode = .scaleAspectFit
         self.translatesAutoresizingMaskIntoConstraints = false
     }
 }
