@@ -34,8 +34,6 @@
 		C8DC78152967527400A7366C /* LocalizablloginAccessibilityLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8DC78142967527400A7366C /* LocalizablloginAccessibilityLocalizable.strings */; };
 		F1146924297F51B700830D0F /* IntroductionController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1146923297F51B700830D0F /* IntroductionController4.swift */; };
 		F1146926297F51C700830D0F /* IntroductionView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1146925297F51C700830D0F /* IntroductionView4.swift */; };
-		F15CA62D2984988E00029B69 /* ButtonBottomless.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CA62C2984988E00029B69 /* ButtonBottomless.swift */; };
-		F19DBA3729836C0F00AB3C63 /* ButtonSocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DBA3629836C0F00AB3C63 /* ButtonSocial.swift */; };
 		F1A756112978E36200DB1290 /* IntroductionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A756102978E36200DB1290 /* IntroductionController.swift */; };
 		F1A756132978E39B00DB1290 /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A756122978E39B00DB1290 /* IntroductionView.swift */; };
 		F1A756152978E3D900DB1290 /* IntroductionController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A756142978E3D900DB1290 /* IntroductionController2.swift */; };
@@ -96,8 +94,6 @@
 		C8DC78142967527400A7366C /* LocalizablloginAccessibilityLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = LocalizablloginAccessibilityLocalizable.strings; sourceTree = "<group>"; };
 		F1146923297F51B700830D0F /* IntroductionController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionController4.swift; sourceTree = "<group>"; };
 		F1146925297F51C700830D0F /* IntroductionView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView4.swift; sourceTree = "<group>"; };
-		F15CA62C2984988E00029B69 /* ButtonBottomless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBottomless.swift; sourceTree = "<group>"; };
-		F19DBA3629836C0F00AB3C63 /* ButtonSocial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSocial.swift; sourceTree = "<group>"; };
 		F1A756102978E36200DB1290 /* IntroductionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionController.swift; sourceTree = "<group>"; };
 		F1A756122978E39B00DB1290 /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
 		F1A756142978E3D900DB1290 /* IntroductionController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionController2.swift; sourceTree = "<group>"; };
@@ -343,8 +339,6 @@
 				F1A756192978E45A00DB1290 /* ImageViewDefault.swift */,
 				F1A7561B2978E48600DB1290 /* LabelDefault2.swift */,
 				F1A7561D2978E4C300DB1290 /* ButtonDefault2.swift */,
-				F19DBA3629836C0F00AB3C63 /* ButtonSocial.swift */,
-				F15CA62C2984988E00029B69 /* ButtonBottomless.swift */,
 			);
 			path = Components2;
 			sourceTree = "<group>";
@@ -502,7 +496,6 @@
 				F1A756212978EE7900DB1290 /* IntroductionController3.swift in Sources */,
 				C83D7C6F2973099700CAF7E7 /* LoginViewTextFieldDelegateExtension.swift in Sources */,
 				C8C734B9296DE85E004C422B /* LabelDefault.swift in Sources */,
-				F19DBA3729836C0F00AB3C63 /* ButtonSocial.swift in Sources */,
 				F1A7561A2978E45A00DB1290 /* ImageViewDefault.swift in Sources */,
 				C8C734B7296DE61F004C422B /* Constants.swift in Sources */,
 				C8DC7800296731BD00A7366C /* IntroductionCoordinator.swift in Sources */,
@@ -512,7 +505,6 @@
 				C8C734B1296DA826004C422B /* Colors+.swift in Sources */,
 				C83D7C6D2973062E00CAF7E7 /* ViewControllerDefault.swift in Sources */,
 				C8DC78052967335B00A7366C /* LoginViewController.swift in Sources */,
-				F15CA62D2984988E00029B69 /* ButtonBottomless.swift in Sources */,
 				C878BE4029709A620037852B /* ViewDefault.swift in Sources */,
 				C8DC77FE2967317900A7366C /* Coordinator.swift in Sources */,
 				F1A756232978EEDA00DB1290 /* IntroductionView3.swift in Sources */,

@@ -7,24 +7,27 @@
 
 import UIKit
 
-class ButtonDefaul2: UIButton {
+class ButtonDefault2: UIButton {
     
-    init(title: String = "Avançar") {
+    init(title: String = "", backgroundColor: UIColor = UIColor.clear, colorTitle: UIColor = .white, borderColor: CGColor = UIColor.clear.cgColor ) {
         super.init(frame: .zero)
-        initDefault(title: title)
+        initDefault(title: title,backgroundColor: backgroundColor, colorTitle: colorTitle, borderColor: borderColor)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func initDefault(title: String) {
+    private func initDefault(title: String, backgroundColor: UIColor, colorTitle: UIColor, borderColor: CGColor) {
         self.setTitle(title, for: .normal)
-        self.setTitleColor(.white, for: .normal)
+        self.setTitleColor(colorTitle, for: .normal)
         self.layer.cornerRadius = 20
-        self.backgroundColor = UIColor(red: 234/255, green: 49/255, blue: 111/255, alpha: 1)
+        self.setImage(UIImage(named: title), for: .normal)
+        self.backgroundColor = backgroundColor
         self.layer.masksToBounds = true
         self.titleLabel?.font = .systemFont(ofSize: 19, weight: .medium)
+        self.layer.borderColor = borderColor
+        self.layer.borderWidth = 3
         self.translatesAutoresizingMaskIntoConstraints = false
     }
 }

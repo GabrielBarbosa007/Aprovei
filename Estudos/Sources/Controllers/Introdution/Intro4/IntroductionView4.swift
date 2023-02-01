@@ -15,17 +15,17 @@ class IntroductionView4: UIView {
     
     lazy var text2 = LabelDefault2(title: "Juntamos um monte de novidades em um único lugar para ajudá-lo a chegar onde sempre sonhou!", font: .systemFont(ofSize: 15, weight: .regular))
     
-    lazy var buttonGoogle = ButtonSocial(title: "google")
+    lazy var buttonGoogle = ButtonDefault2(title: "google")
     
-    lazy var buttonFacebook = ButtonSocial(title: "facebook")
+    lazy var buttonFacebook = ButtonDefault2(title: "facebook")
     
-    lazy var buttonApple = ButtonSocial(title: "apple")
+    lazy var buttonApple = ButtonDefault2(title: "apple")
     
     lazy var ou = LabelDefault2(title: "ou", font: .systemFont(ofSize: 16) )
     
-    lazy var buttonAccount = ButtonBottomless(title: "Cria conta")
+    lazy var buttonAccount = ButtonDefault2(title: "Cria conta",colorTitle: UIColor(red: 234/255, green: 49/255, blue: 111/255, alpha: 1),borderColor: UIColor(red: 234/255, green: 49/255, blue: 111/255, alpha: 1).cgColor)
     
-    lazy var buttonEnter = ButtonDefaul2(title: "Entrar")
+    lazy var enterButton = ButtonDefault2(title: "Entrar",backgroundColor: UIColor(red: 234/255, green: 49/255, blue: 111/255, alpha: 1))
     
     override init(frame: CGRect) {
         super.init(frame:frame)
@@ -38,6 +38,10 @@ class IntroductionView4: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func setButton(targuet: Any?, action: Selector) {
+        enterButton.addTarget(targuet, action: action, for: .touchUpInside)
+    }
+    
     func addViews() {
         self.addSubview(imageIntroduction4)
         self.addSubview(textIntroductio4)
@@ -47,13 +51,13 @@ class IntroductionView4: UIView {
         self.addSubview(buttonApple)
         self.addSubview(ou)
         self.addSubview(buttonAccount)
-        self.addSubview(buttonEnter)
+        self.addSubview(enterButton)
         
     }
     
     func setConstraints() {
         NSLayoutConstraint.activate([
-        
+            
             imageIntroduction4.topAnchor.constraint(equalTo: topAnchor,constant: 110),
             imageIntroduction4.centerXAnchor.constraint(equalTo: centerXAnchor),
             imageIntroduction4.widthAnchor.constraint(equalToConstant: 268),
@@ -95,12 +99,11 @@ class IntroductionView4: UIView {
             buttonAccount.widthAnchor.constraint(equalToConstant: 160),
             buttonAccount.heightAnchor.constraint(equalToConstant: 40),
             
-            buttonEnter.topAnchor.constraint(equalTo: ou.bottomAnchor,constant: 25),
-            buttonEnter.bottomAnchor.constraint(equalTo: bottomAnchor,constant: -58),
-            buttonEnter.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -20),
-            buttonEnter.widthAnchor.constraint(equalToConstant: 160),
-            buttonEnter.heightAnchor.constraint(equalToConstant: 40),
+            enterButton.topAnchor.constraint(equalTo: ou.bottomAnchor,constant: 25),
+            enterButton.bottomAnchor.constraint(equalTo: bottomAnchor,constant: -58),
+            enterButton.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -20),
+            enterButton.widthAnchor.constraint(equalToConstant: 160),
+            enterButton.heightAnchor.constraint(equalToConstant: 40),
         ])
-        
     }
 }

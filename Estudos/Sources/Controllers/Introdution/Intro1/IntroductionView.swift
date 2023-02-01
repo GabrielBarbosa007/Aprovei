@@ -15,7 +15,7 @@ class IntroductionView: UIView {
     
     lazy var texttwo = LabelDefault2(title: "Depois de ouvir diversos concurseiros e estudantes, resolvemos te ajudar a conquistar teus objetivos!", font: .systemFont(ofSize: 15))
     
-    lazy var buttonAdvance = ButtonDefaul2()
+    lazy var buttonAdvance = ButtonDefault2(title: "Avançar",backgroundColor: UIColor(red: 234/255, green: 49/255, blue: 111/255, alpha: 1))
     
     override init(frame: CGRect) {
         super.init(frame: frame)
