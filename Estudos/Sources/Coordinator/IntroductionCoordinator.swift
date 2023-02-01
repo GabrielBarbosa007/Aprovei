@@ -2,13 +2,13 @@
 //  LoginCoordinator.swift
 //  Estudos
 //
-//  Created by Gabriel Barbosa on 05/01/23.
+//  Created by Diego on 13/01/23.
 //
 
 import Foundation
 import UIKit
 
-class LoginCoordinator: Coordinator {
+class IntroductionCoordinator: Coordinator {
     
     let navigationController: UINavigationController
 
@@ -16,7 +16,7 @@ class LoginCoordinator: Coordinator {
         self.navigationController = navigationController
 }
     func start() {
-        let viewController = LoginViewController()
+        let viewController = IntroductionController()
         self.navigationController.pushViewController(viewController, animated: true)
     }
 }
